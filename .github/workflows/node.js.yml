@@ -29,4 +29,4 @@ jobs:
         envkey_TOKEN: ${{ secrets.TOKEN }}
         file_name: .env
     - run: npm i
-    - run: node .
+    - run: npm run start

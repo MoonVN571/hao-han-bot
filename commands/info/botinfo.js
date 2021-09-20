@@ -15,7 +15,7 @@ module.exports = {
         message.reply({content:
             `-   **System:** ${os.type()}` + "\n"
             + `-   **Uptime:** ${hours}h ${minutes}m ${seconds}s` + "\n"
-            + `-   **Ram used:** ${(api.ageCalc(process.memoryUsage().heapUsed / 1024) / 1024).toFixed(2)} MB\n`
+            + `-   **Ram used:** ${(((process.memoryUsage().heapUsed / 1024) / 1024).toFixed(2))} MB\n`
             + "-   **CPU:** " + os.cpus()[0].model + "\n"
             + "-   **CPU core:** " + os.cpus().length + "\n"
             + "-   **CPU speed:** " + os.cpus()[0].speed + "MHz",allowedMentions: { repliedUser: false }

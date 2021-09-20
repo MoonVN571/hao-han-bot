@@ -16,8 +16,9 @@ module.exports = {
         message.reply({content:
             `-   **System:** ${os.type()}` + "\n"
             + `-   **Uptime:** ${hours}h ${minutes}m ${seconds}s` + "\n"
-            + `-   **Ram used:** ${(((process.memoryUsage().heapUsed / 1024) / 1024).toFixed(2))} MB\n`
-            + "-   **CPU:** " + os.cpus()[0].model + "\n"
+            + `-   **Ram bot used:** ${((process.memoryUsage().heapTotal / 1024) / 1024).toFixed(2)} MB` + "\n"
+            + `-   **Ram system used:** ${(((os.freemem / 1024) / 1024).toFixed(2))} MB / ${(((os.totalmem / 1024) / 1024).toFixed(2))} MB\n`
+            + "-   **CPU hosting:** " + os.cpus()[0].model + "\n"
             + "-   **CPU core:** " + os.cpus().length + "\n"
             + "-   **CPU speed:** " + os.cpus()[0].speed + "MHz",allowedMentions: { repliedUser: false }
         });

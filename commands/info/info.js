@@ -15,12 +15,12 @@ module.exports = {
                 },
                 {
                     name: "MEMORY",
-                    value: "8GB Ram",
+                    value: "16 Ram",
                     inline: false
                 },
                 {
                     name: "DISK",
-                    value: "5GB",
+                    value: "100GB",
                     inline: false
                 }
             ],

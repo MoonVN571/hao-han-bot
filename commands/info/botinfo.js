@@ -15,7 +15,7 @@ module.exports = {
         
         message.reply({content:
             `-   **System:** ${os.type()}` + "\n"
-            + `-   **Uptime:** ${day} ngày ${hours}h ${minutes}m ${seconds}s` + "\n"
+            + `-   **Uptime:** ${day}d ${hours}h ${minutes}m ${seconds}s` + "\n"
             + `-   **Ram bot used:** ${((process.memoryUsage().heapTotal / 1024) / 1024).toFixed(2)} MB` + "\n"
             + `-   **Ram system used:** ${(((os.freemem / 1024) / 1024).toFixed(2))} MB / ${(((os.totalmem / 1024) / 1024).toFixed(2))} MB\n`
             + "-   **CPU hosting:** " + os.cpus()[0].model + "\n"

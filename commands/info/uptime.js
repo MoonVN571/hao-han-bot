@@ -10,6 +10,6 @@ module.exports = {
         minutes = parseInt(((temp - day * 86400 - hours * 3600)) / 60);
         seconds = parseInt(temp % 60);
 
-        message.reply({content: "Hosting uptime **" + hours + "H " + minutes + "M " + seconds + "S**.", allowedMentions: { repliedUser: false }});
+        message.reply({content: "Hosting uptime **" + day + " ngày " + hours + "H " + minutes + "M " + seconds + "S**.", allowedMentions: { repliedUser: false }});
     }
 }
